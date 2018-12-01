@@ -6,14 +6,12 @@
   :scm {:name "git"
         :url "https://github.com/RadicalZephyr/re-waypoints.git" }
 
-  :dependencies [[reagent "0.7.0"]
-                 [org.clojure/clojurescript "1.9.908" :scope "test"]
-                 [org.clojure/clojure "1.8.0"         :scope "test"]
-                 [devcards "0.2.3"                    :scope "test"]
-                 [garden "1.3.2"                      :scope "test"]
-                 [cljsjs/react "15.3.1-0"]
-                 [cljsjs/react-dom "15.3.1-1"]]
-  :plugins [[lein-figwheel "0.5.13"]]
+  :dependencies [[reagent "0.8.1"                      :scope "test"]
+                 [org.clojure/clojurescript "1.10.238" :scope "test"]
+                 [devcards "0.2.6"                     :scope "test"]
+                 [garden "1.3.2"                       :scope "test"]]
+
+  :plugins [[lein-figwheel "0.5.17"]]
 
   :clean-targets [:target-path "out"]
 
