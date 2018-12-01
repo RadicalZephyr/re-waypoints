@@ -9,7 +9,9 @@
   :dependencies [[reagent "0.8.1"                      :scope "test"]
                  [org.clojure/clojurescript "1.10.238" :scope "test"]
                  [devcards "0.2.6"                     :scope "test"]
-                 [garden "1.3.2"                       :scope "test"]]
+                 [garden "1.3.2"                       :scope "test"]
+                 [cljsjs/marked "0.3.5-1"              :scope "test"]
+                 [thinktopic/raven "0.1.3"             :scope "test"]]
 
   :plugins [[lein-figwheel "0.5.17"]]
 
@@ -23,4 +25,10 @@
                                    :output-to  "resources/public/js/re_waypoints_devcards.js"
                                    :output-dir "resources/public/js/devcards_out"
                                    :source-map true
-                                   :source-map-timestamp true}}]})
+                                   :source-map-timestamp true}}
+                       {:id "docs"
+                        :source-paths ["src" "test"]
+                        :compiler {:main "re-waypoints.docs"
+                                   :asset-path "js/docs_out"
+                                   :output-to  "resources/public/js/docs.js"
+                                   :output-dir "resources/public/js/docs_out"}}]})
